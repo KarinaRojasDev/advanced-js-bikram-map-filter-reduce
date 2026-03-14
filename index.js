@@ -3,10 +3,10 @@
 
 let numbers = [4, 5, 6, 7, 8, 9, 10];
 
-function elevados(numbers) {
+function elevados() {
   return numbers.map((n) => n ** n);
 }
-console.log(elevados(numbers));
+console.log(elevados());
 
 /* FORMA DOS
 elevados = numbers.map((n) => n ** n); */
@@ -163,7 +163,7 @@ console.log(result7);
 const sentenceElements = [
   "Me",
   "llamo",
-  ,
+  undefined,
   /* Tu nombre aqui! */ "y",
   "quiero",
   "sentir",
@@ -176,7 +176,7 @@ const sentenceElements = [
 
 result8 = sentenceElements.reduce((acumuladorFrase, palabra, indice) => {
   
-  if (indice === 3) palabra = "Karina";
+  /* if (indice === 4) palabra = "Karina"; */
 
   return acumuladorFrase + " " + palabra;
 });
