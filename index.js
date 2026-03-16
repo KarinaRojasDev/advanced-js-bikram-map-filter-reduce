@@ -106,7 +106,7 @@ foodList2 = [
 const platosVeganos = foodList2.filter((plato) => {
   if (plato.isVeggie) return plato;
 });
-result5 = platosVeganos.map((plato, index) => {
+result5 = platosVeganos.map((plato, index) => { 
   const palabra = index % 2 == 0 ? "rico" : "rica";
   return `Que ${palabra} ${plato.name} me voy a comer!`;
 });
@@ -163,8 +163,8 @@ console.log(result7);
 const sentenceElements = [
   "Me",
   "llamo",
-  undefined,
-  /* Tu nombre aqui! */ "y",
+  'Karina',
+   "y",
   "quiero",
   "sentir",
   "la",
